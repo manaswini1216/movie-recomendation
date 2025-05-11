@@ -1,8 +1,10 @@
 import pickle
 import streamlit as st
 import requests
-
 # TMDb API poster fetch
+st.markdown("[Download similarity.pkl from Google Drive](https://drive.google.com/file/d/1xK9W9xMTZ3HQ-fEsin9lIsJwlUdnrO-Q/view?usp=sharing
+)")
+
 def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=6c509083a1c98f861af9f8faa893d8f2&language=en-US"
     try:
